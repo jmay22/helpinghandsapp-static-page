@@ -484,16 +484,22 @@ section.features .feature-item i {
 
 .head-team {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 .volunteer-team {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
+}
+
+@media (max-width: 1034px) {
+  .volunteer-team {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 
 @media (max-width: 500px) {
@@ -503,10 +509,6 @@ section.features .feature-item i {
   }
 
   .head-team {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
-  .volunteer-team {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
@@ -545,7 +547,7 @@ section.features .feature-item i {
 
 #team-name{
   color:black;
-  padding-left: 14px; 
+  padding: 0 14px; 
   font-size: 21px; 
   margin-top:10px;
 }
